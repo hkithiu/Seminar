@@ -1,7 +1,6 @@
 ﻿# Project: Trợ lý Phân loại Cảm xúc Tiếng Việt (Vietnamese Sentiment Assistant)
 
-> **Đồ án môn học:** Seminar Chuyên Đề
->
+
 > **Chủ đề:** Xây dựng ứng dụng phân loại cảm xúc tiếng Việt sử dụng Transformer
 
 ## Giới thiệu
