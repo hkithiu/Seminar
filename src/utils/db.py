@@ -10,7 +10,7 @@ import sqlite3
 import os
 import sqlite3
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 # Đường dẫn tới file DB nằm trong thư mục data/
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # Thư mục hiện tại (src/utils)
@@ -88,7 +88,7 @@ def save_result(text: str, sentiment: str):
 
     with_connection(insert_data)
 
-def get_history(limit: int = 50, sentiment: str | None = None) -> List[Dict[str, Any]]:
+def get_history(limit: int = 50, sentiment: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Lấy danh sách lịch sử mới nhất.
     - limit: số bản ghi tối đa, mặc định 50
